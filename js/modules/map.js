@@ -2,29 +2,14 @@ import Settings from "./settings.js";
 
 var map;
 var userMarker;
-var user;
 
-async function init() {
-	user = await _searchUserByIP();
+async function init(user) {
 	_createMap([user.latitude, user.longitude], Settings.zoom);
 
 	userMarker._icon.style.filter = "hue-rotate(180deg)";
 	userMarker.bindPopup("Vous êtes ici ! (environ)");
 
 	_showInfoRoute();
-}
-
-async function _searchUserByIP(ip = "") {
-	var url = "https://ipapi.co/json/" + ip;
-
-	const response = await fetch(url);
-	const data = await response.json();
-
-	if (response.ok) {
-		return data;
-	} else {
-		throw new Error("Erreur HTTP : " + response.status);
-	}
 }
 
 async function _createMap(lonLat, zoom) {

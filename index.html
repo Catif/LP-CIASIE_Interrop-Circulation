@@ -33,6 +33,18 @@
 			<h2>Partie 1 - Problème de circulation</h2>
 			<div id="LeafletMap"></div>
 
+			<!-- ==================================================
+                PARTIE 2 - COVID-19 
+      =================================================== -->
+			<h2>Partie 2 - COVID</h2>
+			<p>Ci-dessous les statistiques de votre département : <span id="userDepartement">chargement...</span></p>
+			<label for="nbJours">Nombre de jours à afficher :</label>
+			<input type="number" name="nbJours" id="nbJours" value="30" />
+			<canvas id="chartContainer"></canvas>
+
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 		<script src="js/app.js" type="module"></script>
 	</body>
 </html>

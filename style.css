@@ -42,10 +42,27 @@ p {
 	max-width: 1200px;
 	margin: auto;
 	padding: 1rem;
+	margin-bottom: 500px;
 }
 
 #LeafletMap {
 	height: 400px;
 	width: 100%;
 	border-radius: 0.5rem;
+}
+
+#userDepartement {
+	font-weight: bold;
+}
+
+input#nbJours {
+	width: 8ch;
+	border-radius: 0.5rem;
+	border: none;
+	padding: 0.3rem 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+canvas {
+	background-color: hsla(258, 50%, 98%, 1);
 }
