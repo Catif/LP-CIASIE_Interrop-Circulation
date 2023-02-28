@@ -70,3 +70,32 @@ canvas {
 .quality-air img {
 	width: 100px;
 }
+
+.list-images {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.list-images img {
+	width: 100px;
+	margin: 0.5rem;
+	border-radius: 0.25rem;
+}
+
+#btnLoadImages {
+	text-align: center;
+}
+
+#btnLoadImages button {
+	border: none;
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem;
+	margin: 1rem;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+#btnLoadImages button:hover {
+	background-color: hsl(101, 30%, 82%);
+	color: hsl(250, 92%, 5%);
+}
