@@ -42,7 +42,7 @@ p {
 	max-width: 1200px;
 	margin: auto;
 	padding: 1rem;
-	margin-bottom: 500px;
+	margin-bottom: 100px;
 }
 
 #LeafletMap {
@@ -98,4 +98,13 @@ canvas {
 #btnLoadImages button:hover {
 	background-color: hsl(101, 30%, 82%);
 	color: hsl(250, 92%, 5%);
+}
+
+ul {
+	margin-left: 1rem;
+}
+
+.container > ul > li {
+	margin-top: 1.5rem;
+	text-decoration: underline;
 }

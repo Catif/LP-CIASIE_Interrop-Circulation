@@ -63,6 +63,71 @@
 			<p id="btnLoadImages">
 				<button>Charger 10 images supplémentaire</button>
 			</p>
+
+			<!-- ==================================================
+								Source
+			=================================================== -->
+			<h2>Source</h2>
+			<ul>
+				<li>Générale</li>
+				<ul>
+					<li>Localisation par IP : ipapi => <a href="https://ipapi.co/json/">https://ipapi.co/json/</a></li>
+					<li>
+						Récupération du département : API Gouvernement =>
+						<a href="https://geo.api.gouv.fr/communes?codePostal=54000&nom=Nancy&fields=departement&format=json&geometry=centre"
+							>https://geo.api.gouv.fr/communes?codePostal=54000&nom=Nancy&fields=departement&format=json&geometry=centre</a
+						>
+					</li>
+				</ul>
+
+				<li>Partie 1 - Problème de circulation :</li>
+				<ul>
+					<li>Map utilisé : Leaflet => <a href="https://leafletjs.com/">https://leafletjs.com/</a></li>
+					<li>
+						Style cartographique utilisé : Google Maps =>
+						<a href="https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}">https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}</a>
+					</li>
+					<li>
+						Récupération des données de travaux dans Nancy : API Nancy =>
+						<a href="https://carto.g-ny.org/data/cifs/cifs_waze_v2.json">https://carto.g-ny.org/data/cifs/cifs_waze_v2.json</a>
+					</li>
+				</ul>
+
+				<li>Partie 2 - COVID :</li>
+				<ul>
+					<li>Outils d'affichage statistique : Chart.js => <a href="https://www.chartjs.org/">https://www.chartjs.org/</a></li>
+					<li>
+						Donnée Covid : Opendatasoft =>
+						<a
+							href="https://data.opendatasoft.com/api/records/1.0/search/?dataset=donnees-hospitalieres-covid-19-dep-france%40public&rows=30&sort=date&refine.region_min=Grand%20Est&refine.nom_dep_min=Meurthe-et-Moselle&refine.sex=Tous"
+							>https://data.opendatasoft.com/api/records/1.0/search/?dataset=donnees-hospitalieres-covid-19-dep-france%40public&rows=30&sort=date&refine.region_min=Grand%20Est&refine.nom_dep_min=Meurthe-et-Moselle&refine.sex=Tous</a
+						>
+					</li>
+				</ul>
+				<li>Partie 3 - Qualité de l'air :</li>
+				<ul>
+					<li>
+						Récupération des images pour les émojies : emojipedia =>
+						<a href="https://emojipedia.org/samsung/">https://emojipedia.org/samsung/</a>
+					</li>
+					<li>
+						Donnée qualité de l'air : waqi =>
+						<a href="https://api.waqi.info/feed/here/?token=cb9d9b652fb88402c87464a9daa1338d7119c949"
+							>https://api.waqi.info/feed/here/?token=cb9d9b652fb88402c87464a9daa1338d7119c949</a
+						>
+					</li>
+				</ul>
+
+				<li>Partie 4 - Bonus</li>
+				<ul>
+					<li>
+						Récupération des images de rover de Mars : API Nasa =>
+						<a href="https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY"
+							>https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY</a
+						>
+					</li>
+				</ul>
+			</ul>
 		</div>
 
 		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
