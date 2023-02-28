@@ -66,3 +66,7 @@ input#nbJours {
 canvas {
 	background-color: hsla(258, 50%, 98%, 1);
 }
+
+.quality-air img {
+	width: 100px;
+}

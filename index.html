@@ -42,6 +42,18 @@
 			<input type="number" name="nbJours" id="nbJours" value="30" />
 			<canvas id="chartContainer"></canvas>
 
+			<!-- ==================================================
+                PARTIE 3 - Qualité de l'air 
+      =================================================== -->
+			<h2>Partie 3 - Qualité de l'air</h2>
+			<div class="quality-air">
+				<div>
+					<p>Votre réaction à la qualité de l'air :</p>
+					<img src="" />
+				</div>
+				<span id="userAirQuality">(chargement...)</span>
+				<input type="range" name="airQuality" id="airQuality" min="0" max="350" value="50" />
+			</div>
 		</div>
 
 		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

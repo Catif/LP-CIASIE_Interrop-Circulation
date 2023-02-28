@@ -5,4 +5,8 @@ export default {
 		maxZoom: 20,
 		subdomains: ["mt0", "mt1", "mt2", "mt3"],
 	},
+	qualityAir: {
+		url: "https://api.waqi.info",
+		token: "cb9d9b652fb88402c87464a9daa1338d7119c949",
+	},
 };
